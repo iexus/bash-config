@@ -1,0 +1,92 @@
+{
+    "workbench.colorTheme": "Tomorrow Night Eighties",
+    "workbench.colorCustomizations": {
+        "statusBar.background" : "#313131",
+        "statusBar.noFolderBackground" : "#252525",
+        "statusBar.debuggingBackground": "#511f1f",
+        "editor.selectionBackground": "#135564",
+        "editor.selectionHighlightBackground": "#135564",
+        "editor.findMatchBackground": "#00cc44a8", //Current SEARCH MATCH
+        "editor.findMatchHighlightBackground": "#ff7b00a1" //Other SEARCH MATCHES
+    },
+    "window.zoomLevel": 0,
+    "go.formatTool": "gofmt",
+    "files.insertFinalNewline": true,
+    "vim.leader": ",",
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [":W"],
+            "commands": [
+                "workbench.action.files.save",
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>", "c", "<space>"
+            ],
+            "after": [
+                "g", "c", "c"
+            ]
+        },
+        {
+            "before": [
+                "<leader>", "s", "w"
+            ],
+            "commands": [
+                "trailing-spaces.deleteTrailingSpaces"
+            ]
+        },
+        {
+            "before": [
+                "<leader>", "f"
+            ],
+            "commands": [
+                "workbench.action.quickOpen"
+            ]
+        }
+    ],
+    "vim.visualModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                ">"
+            ],
+            "commands": [
+                "editor.action.indentLines"
+            ]
+        },
+        {
+            "before": [
+                "<"
+            ],
+            "commands": [
+                "editor.action.outdentLines"
+            ]
+        },
+        {
+            "before": [
+                "<leader>", "c", "<space>"
+            ],
+            "after": [
+                "g", "c", "c"
+            ]
+        }
+    ],
+    "java.errors.incompleteClasspath.severity": "ignore",
+    "java.jdt.ls.vmargs": "-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication -javaagent:\"/Users/robliddle/.vscode/extensions/gabrielbb.vscode-lombok-0.9.9/server/lombok.jar\"",
+    "files.exclude": {
+        "**/.tags": true,
+        "**/tags": true,
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "vim.history": 200,
+    "vim.hlsearch": true,
+    "vim.highlightedyank.enable": true,
+    "files.trimTrailingWhitespace": true
+}
