@@ -1,0 +1,11 @@
+*~
+.*.swp
+.DS_Store
+TAGS
+.TAGS
+!TAGS/
+tags
+.tags
+!tags/
+.vscode
+*.coverprofile
